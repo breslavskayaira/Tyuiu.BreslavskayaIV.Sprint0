@@ -21,9 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{df45cdd1-de37-4f76-8952-140fa9d62a54}</ProjectGuid>
+    <ProjectGuid>{8c343813-d9b8-4496-a1c9-75f17beebc51}</ProjectGuid>
     <RootNamespace>TyuiuBreslavskayaIVSprint0Task3Lib</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Tyuiu.BreslavskayaIV.Sprint0.Task3.V0.Lib</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -156,12 +157,17 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="Tyuiu.BreslavskayaIV.Sprint0.Task3.Lib.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tyuiu.BreslavskayaIV.Sprint0.Task3.Test\Tyuiu.BreslavskayaIV.Sprint0.Task3.Test.vcxproj">
+      <Project>{9d0612a6-ccfe-4909-8e2e-db8f31b9cac1}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
