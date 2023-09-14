@@ -18,7 +18,7 @@ namespace TyuiuBreslavskayaIVSprint0Task5V4Test
 			float c = 6.5;
 			int d;
 			d = date->Culc(a, b, c);
-			Assert::AreEqual(74.04, c);
+			Assert::AreEqual(74.04, d);
 		}
 	};
 }
