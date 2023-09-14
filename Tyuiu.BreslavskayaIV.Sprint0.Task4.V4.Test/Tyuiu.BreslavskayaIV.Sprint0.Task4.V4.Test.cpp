@@ -18,7 +18,7 @@ namespace TyuiuBreslavskayaIVSprint0Task4V4Test
 			int d = 7;
 			int f;
 			f = date-> Culc(a, b, c, d);
-			Assert::AreEqual(34, c);
+			Assert::AreEqual(34, f);
 		}
 	};
 }
